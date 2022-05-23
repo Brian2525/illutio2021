@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;rb18-red-bull-racing</title>
+    <meta charset="utf-8">
+    <meta name="description" content="rb18-red-bull-racing">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer bounds="tight" src="modelos/autoF1_B2.glb" 
+                  ios-src="modelos/autoF1_B2.usdz" 
+                  ar ar-modes="webxr scene-viewer quick-look" 
+                  camera-controls environment-image="neutral" 
+                  poster="img/poster.png" 
+                  shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+      <div class="update-bar">
+      </div>
+      </div>
+      
+      
+      <button slot="ar-button" id="ar-button">
+          VER EN RA
+      </button>
+      
+      
+      <div id="ar-prompt">
+          <img src="img/ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    
+    <div>
+      <h1>
+        RB18
+      </h1>
+      <hr>
+      <p>
+        Te presentamos el RB18 de Red Bull Racing, el monoplaza con el que Max Verstappen y Sergio Pérez lucharán en la pista por conquistar el campeonato 2022.
+      </p>
+      <img class="logo" src="https://cdn.glitch.global/ad86a14a-83b1-4383-818b-46ae383ae49b/Logo_Compuesto_20cm.png?v=1645556211029">
+
+    </div>
+    
+    
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
+</html>
